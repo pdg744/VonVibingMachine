@@ -1,72 +1,129 @@
 # Instruction Library
 
-## Instruction Categories
+## System Management Instructions
 
-### System Instructions (SYS-*)
-**SYS-001: System Health Check**
-- **Purpose**: Verify system integrity and memory files
-- **Input**: None
-- **Output**: System status report
-- **Success Criteria**: All memory files accessible and valid
+### UPDATE SYSTEM STATE
+**Purpose**: Modify current_state, execution_log, instruction_queue
+**Persona**: System Manager
+**Template**: 
+- Update current_state.md with new context
+- Add entry to execution_log.md
+- Modify instruction_queue.md as needed
+**Success Criteria**: All system memory files updated accurately
 
-**SYS-002: Persona Switch**
-- **Purpose**: Change active persona for different tasks
-- **Input**: Target persona name
-- **Output**: Updated current_state.md with new persona
-- **Success Criteria**: Persona successfully switched and logged
+### SWITCH PERSONA
+**Purpose**: Change to appropriate persona for current task
+**Persona**: System Manager
+**Template**:
+- Identify required persona for next task
+- Update current_state.md with new persona
+- Ensure persona skills match task requirements
+**Success Criteria**: Correct persona active and ready for task
 
-### Project Instructions (PROJ-*)
-**PROJ-001: Project Initialization**
-- **Purpose**: Create new project structure
-- **Input**: Project name, type, requirements
-- **Output**: Project directory with basic structure
-- **Success Criteria**: Project directory created with essential files
+### PLAN INSTRUCTION QUEUE
+**Purpose**: Determine next system actions
+**Persona**: System Manager
+**Template**:
+- Review current state and project status
+- Identify next priority actions
+- Update instruction_queue.md with plan
+**Success Criteria**: Clear next steps defined in queue
 
-**PROJ-002: Requirements Analysis**
-- **Purpose**: Analyze and document project requirements
-- **Input**: User requirements description
-- **Output**: Structured requirements document
-- **Success Criteria**: Clear, actionable requirements defined
+### MANAGE PROJECT CONTEXT
+**Purpose**: Update project-specific context files
+**Persona**: System Manager
+**Template**:
+- Update project's context.md file
+- Track progress and milestones
+- Maintain project status accuracy
+**Success Criteria**: Project context reflects current reality
 
-**PROJ-003: Architecture Design**
-- **Purpose**: Design project architecture
-- **Input**: Requirements, project type
-- **Output**: Architecture diagram and technical decisions
-- **Success Criteria**: Clear architecture defined and documented
+## Project Building Instructions
 
-### Development Instructions (DEV-*)
-**DEV-001: Component Creation**
-- **Purpose**: Create individual code components
-- **Input**: Component specification
-- **Output**: Working code component
-- **Success Criteria**: Component functions as specified
+### ANALYZE REQUIREMENTS
+**Purpose**: Understand what we're building and break it down
+**Persona**: Project Coordinator
+**Template**:
+- Review user requirements and goals
+- Break down into manageable features
+- Identify technical requirements and constraints
+- Create initial project plan
+**Success Criteria**: Clear understanding of what needs to be built
 
-**DEV-002: Feature Implementation**
-- **Purpose**: Implement complete features
-- **Input**: Feature requirements
-- **Output**: Working feature with tests
-- **Success Criteria**: Feature works and passes tests
+### PROTOTYPE FEATURE
+**Purpose**: Build working code quickly
+**Persona**: Rapid Prototyper
+**Template**:
+- Implement minimal viable feature
+- Focus on functionality over perfection
+- Create working code that demonstrates concept
+- Keep implementation simple and clear
+**Success Criteria**: Feature works as intended
 
-### Testing Instructions (TEST-*)
-**TEST-001: Unit Test Creation**
-- **Purpose**: Create unit tests for components
-- **Input**: Component to test
-- **Output**: Unit test suite
-- **Success Criteria**: Tests pass and cover key functionality
+### TEST FUNCTIONALITY
+**Purpose**: Verify it works and identify issues
+**Persona**: Quality Validator
+**Template**:
+- Test feature functionality manually
+- Identify bugs and issues
+- Validate against user requirements
+- Document any problems found
+**Success Criteria**: Feature works correctly or issues clearly identified
 
-### Deployment Instructions (DEPLOY-*)
-**DEPLOY-001: Environment Setup**
-- **Purpose**: Set up deployment environment
-- **Input**: Deployment requirements
-- **Output**: Configured deployment environment
-- **Success Criteria**: Environment ready for deployment
+### ITERATE IMPROVEMENT
+**Purpose**: Improve based on feedback and testing
+**Persona**: Rapid Prototyper
+**Template**:
+- Address identified issues
+- Incorporate user feedback
+- Improve functionality and usability
+- Maintain working state
+**Success Criteria**: Improvements implemented successfully
 
-## Instruction Template
-```
-**INSTRUCTION-ID: Instruction Name**
-- **Purpose**: What this instruction accomplishes
-- **Input**: What information/parameters needed
-- **Output**: What is produced
-- **Success Criteria**: How to know it's complete
-- **Persona**: Which persona should execute this
-``` 
+### CREATE DOCUMENTATION
+**Purpose**: Make it user-friendly and clear
+**Persona**: Quality Validator
+**Template**:
+- Create clear, simple documentation
+- Include setup and usage instructions
+- Document key features and functionality
+- Make it accessible to target users
+**Success Criteria**: Documentation is clear and helpful
+
+## Hybrid Operations
+
+### INITIALIZE PROJECT
+**Purpose**: Set up project structure + update system context
+**Persona**: Project Coordinator
+**Template**:
+- Create project directory structure
+- Initialize project context file
+- Set up basic project files
+- Update system state with new project
+**Success Criteria**: Project structure created and system updated
+
+### UPDATE PROJECT STATUS
+**Purpose**: Track progress + update system memory
+**Persona**: Project Coordinator
+**Template**:
+- Update project progress in context.md
+- Record completed milestones
+- Update system execution log
+- Plan next project steps
+**Success Criteria**: Both project and system status current
+
+### HANDLE USER INPUT
+**Purpose**: Process user feedback + update system state
+**Persona**: Project Coordinator
+**Template**:
+- Process user requirements or feedback
+- Update project context accordingly
+- Modify instruction queue based on input
+- Update system state with new information
+**Success Criteria**: User input processed and system updated
+
+## Instruction Execution Guidelines
+- Always update system state after instruction completion
+- Choose appropriate persona for each instruction
+- Track instruction success/failure for optimization
+- Maintain focus on user project success 

@@ -16,4 +16,4 @@
 [What's done, what's next]
 
 ## Notes
-[Important decisions, constraints, etc.]
+[Important decisions, constraints, etc.] 

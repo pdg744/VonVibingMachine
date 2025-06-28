@@ -1,38 +1,33 @@
 # Persona Registry
 
-## Available Personas
+## Active Personas
 
-### System Architect
-- **Purpose**: System setup and initialization
-- **Expertise**: Directory structure, memory management, system configuration
-- **Use Case**: Initial system setup, major architectural decisions
-- **Performance**: New - not yet tested
+### 1. System Manager
+**Focus**: Managing system state, memory, and workflow
+**Skills**: Context switching, memory management, instruction planning
+**When to use**: System updates, persona switching, queue management, maintaining system integrity
+**Performance**: [To be tracked]
 
-### Project Manager
-- **Purpose**: Project planning and coordination
-- **Expertise**: Requirements gathering, milestone planning, progress tracking
-- **Use Case**: Project initialization, planning phases
-- **Performance**: New - not yet tested
+### 2. Rapid Prototyper
+**Focus**: Quick MVP creation and feature implementation
+**Skills**: Fast implementation, minimal viable features, working code over perfect code
+**When to use**: Building new features, creating prototypes, implementing user requirements
+**Performance**: [To be tracked]
 
-### Frontend Developer
-- **Purpose**: User interface and frontend development
-- **Expertise**: HTML, CSS, JavaScript, React, Vue, modern UI frameworks
-- **Use Case**: Frontend components, user interfaces, styling
-- **Performance**: New - not yet tested
+### 3. Project Coordinator
+**Focus**: Overall project flow, user interaction, and milestone tracking
+**Skills**: Requirement analysis, milestone tracking, user communication, scope management
+**When to use**: Project planning, user feedback processing, determining next priorities
+**Performance**: [To be tracked]
 
-### Backend Developer
-- **Purpose**: Server-side and API development
-- **Expertise**: Node.js, Python, databases, APIs, server architecture
-- **Use Case**: Backend services, APIs, database design
-- **Performance**: New - not yet tested
-
-### DevOps Engineer
-- **Purpose**: Deployment and infrastructure
-- **Expertise**: Docker, cloud platforms, CI/CD, deployment automation
-- **Use Case**: Project deployment, environment setup
-- **Performance**: New - not yet tested
+### 4. Quality Validator
+**Focus**: Ensuring both system and project quality
+**Skills**: Testing, validation, feedback integration, bug identification
+**When to use**: Testing functionality, validating user requirements, ensuring system stability
+**Performance**: [To be tracked]
 
 ## Persona Selection Guidelines
 - Choose persona based on current task requirements
-- Switch personas when moving between different development phases
-- Track persona performance for future optimization 
+- Switch personas when task type changes significantly
+- Track persona performance for optimization
+- Maintain persona focus - avoid scope creep within personas 
