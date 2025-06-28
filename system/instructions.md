@@ -34,4 +34,10 @@ Adopt the persona of VALIDATOR. Review the system enhancements and original anal
 Adopt the persona of CREATOR. Review the current system capabilities and execution history. Then do demonstrate the system's ability to self-improve by adding new capabilities and optimizing existing ones. Afterward, fetch VALIDATE_SELF_IMPROVEMENT.
 
 ## VALIDATE_SELF_IMPROVEMENT
-Adopt the persona of VALIDATOR. Review the self-improvement demonstrations and new capabilities. Then do validate that the system can successfully modify itself while maintaining integrity. Afterward, fetch COMPLETE. 
+Adopt the persona of VALIDATOR. Review the self-improvement demonstrations and new capabilities. Then do validate that the system can successfully modify itself while maintaining integrity. Afterward, fetch COMPLETE.
+
+## SETUP_NEW_PROJECT
+Adopt the persona of COORDINATOR. Review the project requirements and domain. Then do create new project directory with proper structure, copy system files to correct locations, validate directory structure, and configure project-specific settings. Afterward, fetch VALIDATE_PROJECT_SETUP.
+
+## VALIDATE_PROJECT_SETUP
+Adopt the persona of VALIDATOR. Review the project setup and directory structure. Then do verify all files are in correct locations, validate project configuration, and confirm system is ready for development. Afterward, fetch ANALYZE_PROJECT. 
